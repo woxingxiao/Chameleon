@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.xw.repo.chameleon.ChameleonLinearLayout
-    android:id="@+id/layout"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#4CAF50"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.xw.sample.chameleon.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.xw.repo.chameleon.ChameleonFrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</com.xw.repo.chameleon.ChameleonLinearLayout>
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_chameleon"/>
+    </com.xw.repo.chameleon.ChameleonFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/red"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>
