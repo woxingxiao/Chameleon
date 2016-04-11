@@ -9,13 +9,13 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 
 /**
- * ChameleonLinearLayout
+ * ChameleonFrameLayout
  * Created by woxingxiao on 2016-04-10.
  */
-public class ChameleonLinearLayout extends LinearLayout {
+public class ChameleonFrameLayout extends FrameLayout {
 
     private static final int MSG_WHAT = 0x410;
 
@@ -24,11 +24,11 @@ public class ChameleonLinearLayout extends LinearLayout {
     private long mDuration = 3000;
     private int mFraction;
 
-    public ChameleonLinearLayout(Context context) {
+    public ChameleonFrameLayout(Context context) {
         this(context, null);
     }
 
-    public ChameleonLinearLayout(Context context, AttributeSet attrs) {
+    public ChameleonFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
