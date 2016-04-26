@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button3).setOnClickListener(this);
 
         if (mChameleonLayout != null) {
-            mChameleonLayout.setTargetColorString("#e99d3c", 3000);
+            mChameleonLayout.setTargetColorString("#e99d3c");
+            mChameleonLayout.setDuration(2000);
             mChameleonLayout.startChangingColor();
         }
-
     }
 
     @Override
