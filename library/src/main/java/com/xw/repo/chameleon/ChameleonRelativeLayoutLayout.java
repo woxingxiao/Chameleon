@@ -10,24 +10,25 @@ import android.os.Looper;
 import android.os.Message;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 /**
- * ChameleonFrameLayout
+ * ChameleonRelativeLayoutLayout
  * Created by woxingxiao on 2016-04-10.
  */
-public class ChameleonFrameLayout extends FrameLayout {
+public class ChameleonRelativeLayoutLayout extends RelativeLayout {
 
     private static final int MSG_WHAT = 0x410;
 
     private long mDuration = 3000;
     private ChameleonHelper mChameleonHelper;
 
-    public ChameleonFrameLayout(Context context) {
+
+    public ChameleonRelativeLayoutLayout(Context context) {
         this(context, null);
     }
 
-    public ChameleonFrameLayout(Context context, AttributeSet attrs) {
+    public ChameleonRelativeLayoutLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         mChameleonHelper = new ChameleonHelper();
