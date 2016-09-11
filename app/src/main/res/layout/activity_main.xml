@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.xw.sample.chameleon.MainActivity">
 
-    <com.xw.repo.chameleon.ChameleonFrameLayout
+    <FrameLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
             android:contentDescription="@null"
             android:scaleType="centerCrop"
             android:src="@mipmap/bg_chameleon"/>
-    </com.xw.repo.chameleon.ChameleonFrameLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
