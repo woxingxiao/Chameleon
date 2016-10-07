@@ -13,4 +13,4 @@ mChameleon = new Chameleon()
        });
 mChameleon.startChangingColor();
 ```
-![demo](https://github.com/woxingxiao/Chameleon/blob/master/demo.gif)
+![demo](https://github.com/woxingxiao/Chameleon/blob/master/demo2.gif)
