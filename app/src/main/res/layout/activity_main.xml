@@ -10,20 +10,20 @@
     <FrameLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="240dp"
         android:background="@color/colorPrimary">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:contentDescription="@null"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             android:src="@mipmap/bg_chameleon"/>
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal">
 
@@ -59,4 +59,10 @@
             android:layout_weight="1"
             android:background="@color/colorAccent"/>
     </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>
